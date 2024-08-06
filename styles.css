@@ -1,8 +1,11 @@
 body {
     display: flex;
-    border: 2px solid #666;
     flex-direction: column;
-    min-height: 200vh;
+    min-height: 100vh;
+
+    /* Removes white space */
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -11,7 +14,6 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border: 2px solid #000;
     background-color: #1F2937;
     padding: 0 10% 10% 10%;
 /*     justify-content: space-between;  THis is what makes the last contaienr go down  */
@@ -21,13 +23,11 @@ body {
 
 .headers {
     display: flex;
-    border: 2px solid #000;
     justify-content: space-between;
 }
 
 .header-logo {
     display: flex;
-    border: 2px solid #000;
     align-self: center;
     font-size: 24px;
     color: #F9FAF8;
@@ -36,20 +36,17 @@ body {
 
 .right-headers {
     display: flex;
-    border: 2px solid #000;
     gap: 20px;
 }
 
 /* Center piece content on the first section */
 .header-content {
     display: flex;
-    border: 2px solid #000;
     gap: 35px;
 }
 
 .left-header-content {
     display: flex;
-    border: 2px solid #000;
     flex-direction: column;
     flex: 1;
     gap: 10px;
@@ -82,7 +79,6 @@ body {
 
 .right-header-content {
     display: flex;
-    border: 2px solid #000;
     flex: 1;
     flex-wrap: wrap;
     background-color: gray;
@@ -95,7 +91,6 @@ body {
 .secondSection {
     display: flex;
     flex: 1;
-    border: 2px solid #000;
     flex-direction: column;
     padding: 5% 5% 10% 5%;
     flex-grow: 0;
@@ -104,13 +99,11 @@ body {
 
 .card-section {
     display: flex;
-    border: 2px solid #666;
     justify-content: center;
 }
 
 .cards {
     display: flex;
-    border: 2px solid #000;
     justify-content: center;
     gap: 30px;
 }
@@ -120,6 +113,11 @@ body {
     height: 150px;
     width: 125px;
     border-radius: 12px;
+}
+
+.card-box-flex-item {
+    width: 150px;
+    flex-direction: column;
 }
 
 
@@ -134,7 +132,6 @@ body {
 .thirdSection {
     display: flex;
     flex: 1;
-    border: 2px solid #000;
     background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
@@ -161,10 +158,69 @@ body {
     justify-content: end;
 }
 
+/* Fourth Section */
 .fourthSection {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.fourth-section-signup {
+    display: flex;
     flex: 1;
-    border: 2px solid #000;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-container {
+    padding: 50px;
+    margin: 100px 100px;
+    background-color: #3882F6;
+    border-radius: 7px;
+}
+
+.signup-item-call-to-action {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.signup-item-subtext {
+    color: #E5E7EB;
+}
+
+.signup-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-button-2 {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    flex-grow: 0;
+    width: 125px;
+    height: 30px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.fourth-section-footer {
+    display: flex;
+    flex-basis: 100px;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
 }
 
 /* Removes the black bullets from a list*/
